@@ -3,7 +3,7 @@
 lock() {
     i3lock -c 000000 -e -f
 
-    while true
+    (while true
     do
         sleep 10
         if pgrep i3lock
@@ -12,7 +12,7 @@ lock() {
 	else
 	  break
 	fi
-    done
+    done) &
 }
 
 blackout() {
