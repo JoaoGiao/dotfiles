@@ -5,7 +5,7 @@ My own personal dotfiles.
 ## Download
 
 ```bash
-git clone --recursive https://github.com/GrimKriegor/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/JoaoGiao/dotfiles.git ~/.dotfiles
 ```
 
 ## Installation
