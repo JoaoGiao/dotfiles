@@ -6,11 +6,6 @@ alias dfi='echo "Initializing dotfiles" && workdir=$(pwd) && cd ~/.dotfiles && b
 alias dfu='echo "Updating dotfiles" && workdir=$(pwd) && cd ~/.dotfiles && git pull && cd $workdir'
 alias dfuu='echo "Updating dotfiles" && workdir=$(pwd) && cd ~/.dotfiles && git pull --recurse-submodules && cd $workdir'
 
-#------------------------------
-# User scripts
-#------------------------------
-export PATH="$(du "$HOME/.scripts/" --exclude ".scripts/external" | cut -f2 | tr '\n' ':' | sed 's|:*$||' | sed 's|\/$||'):$PATH"
-
 source $HOME/.zshconfig
 
 #------------------------------
