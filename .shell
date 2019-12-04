@@ -11,6 +11,8 @@ alias dfuu='echo "Updating dotfiles" && workdir=$(pwd) && cd ~/.dotfiles && git 
 #------------------------------
 export PATH="$(du "$HOME/.scripts/" --exclude ".scripts/external" | cut -f2 | tr '\n' ':' | sed 's|:*$||' | sed 's|\/$||'):$PATH"
 
+source $HOME/.zshconfig
+
 #------------------------------
 # Aliases
 #------------------------------
