@@ -72,7 +72,7 @@ function createLinks {
     if [ "$is_blacklisted" == "" ]; then
       echo "Linking $filename"
       [[ $force && $filename != "" ]] && rm -rf "$installation_directory/$target_subdir$target_filename" 2>/dev/null | true
-      ln -sTf "$dirname/$subdir$filename" "$installation_directory/$target_subdir$target_filename" | true
+      ln -sf "$dirname/$subdir$filename" "$installation_directory/$target_subdir$target_filename" | true
     fi
 
   done
